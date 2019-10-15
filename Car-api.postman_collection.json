@@ -1,0 +1,196 @@
+{
+	"info": {
+		"_postman_id": "1d144a08-455b-42b4-bc1b-4c57ac273502",
+		"name": "Car-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get",
+			"item": [
+				{
+					"name": "localhost:3000/available-car-list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						},
+						"description": "This get route displays the available cars for booking"
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:3000/single-car-info/:carId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						},
+						"description": "this route gives a single car info of given car id"
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:3000/booking/product-Details",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						},
+						"description": "This routes displays the list of booked car"
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:3000/booking/single-product/:bookingId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						},
+						"description": "this route gives the info of single booked car of given booking id"
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNhdXJhYmhAZ21haWwuY29tIiwidXNlcklkIjoiNWRhNTgyYTJmNGViMTkzNTA0M2IwN2I4IiwiaWF0IjoxNTcxMTUyNjg5LCJleHAiOjE1NzExNTYyODl9.kyfGgDAneuNK8hu4sIL8jAI2iKigxEa1_gL1Zm4WawY",
+						"type": "string"
+					}
+				]
+			},
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "post",
+			"item": [
+				{
+					"name": "localhost:3000/add-new-car",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": ""
+						},
+						"description": "this route is used for adding a new car to list"
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:3000/booking/place-order",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": ""
+						},
+						"description": "this route is used for booking a car based on availability"
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:3000/user/signup",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": ""
+						},
+						"description": "this route is used to sign up for new user"
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:3000/user/login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": ""
+						},
+						"description": "this route is used for login\ntype:Authorization\ntoken :Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNhdXJhYmhAZ21haWwuY29tIiwidXNlcklkIjoiNWRhNTgyYTJmNGViMTkzNTA0M2IwN2I4IiwiaWF0IjoxNTcxMTUyNjg5LCJleHAiOjE1NzExNTYyODl9.kyfGgDAneuNK8hu4sIL8jAI2iKigxEa1_gL1Zm4WawY"
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNhdXJhYmhAZ21haWwuY29tIiwidXNlcklkIjoiNWRhNTgyYTJmNGViMTkzNTA0M2IwN2I4IiwiaWF0IjoxNTcxMTUyNjg5LCJleHAiOjE1NzExNTYyODl9.kyfGgDAneuNK8hu4sIL8jAI2iKigxEa1_gL1Zm4WawY",
+						"type": "string"
+					}
+				]
+			},
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "delete",
+			"item": [
+				{
+					"name": "localhost:3000/delete/:carId",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": ""
+						},
+						"description": "This route is used to delete a particular car if its not booked"
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:3000/booking/delete/:bookingId",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": ""
+						},
+						"description": "this route is used to delete a booked car"
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "patch",
+			"item": [
+				{
+					"name": "localhost:3000/update/:carId",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": ""
+						},
+						"description": "this route is used to update a particular car details"
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNhdXJhYmhAZ21haWwuY29tIiwidXNlcklkIjoiNWRhNTgyYTJmNGViMTkzNTA0M2IwN2I4IiwiaWF0IjoxNTcxMTUyNjg5LCJleHAiOjE1NzExNTYyODl9.kyfGgDAneuNK8hu4sIL8jAI2iKigxEa1_gL1Zm4WawY",
+				"type": "string"
+			}
+		]
+	},
+	"protocolProfileBehavior": {}
+}
